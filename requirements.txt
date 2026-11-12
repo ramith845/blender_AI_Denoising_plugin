@@ -1,0 +1,13 @@
+# Python 3.13 packages for this project (.venv). The CUDA 11.8 builds of torch come
+# from PyTorch's own package index:
+#   pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu118
+
+# Phase 2: training
+torch==2.7.1+cu118
+torchvision==0.22.1+cu118
+numpy==2.5.3
+OpenImageIO==3.2.2.0  # reads/writes the dataset's EXR files
+tensorboard==2.21.0  # training curves and preview images
+
+# Editor autocomplete for the Blender scripts (not used at runtime)
+fake-bpy-module-latest==20261001
